@@ -1,0 +1,15 @@
+{
+  "name": "@behavioral-drift/sdk",
+  "version": "0.1.0",
+  "description": "Browser SDK for Behavioral Drift API",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
