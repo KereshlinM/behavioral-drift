@@ -18,12 +18,12 @@ services:
   backend:
     build: ./backend
     ports:
-      - "8000:8000"
+      - "8003:8000"
     environment:
       DATABASE_URL: postgresql+asyncpg://postgres:postgres@db:5432/behavioral_drift
-      SECRET_KEY: ${SECRET_KEY:-change-me-in-production}
+      SECRET_KEY: ${SECRET_KEY:-dk_XFNuYuX38EncMDLB97K84YwXlGE9n-V8qzLp_HLs2W0}
       APP_ENV: ${APP_ENV:-development}
-      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5173}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5176}
     depends_on:
       db:
         condition: service_healthy
